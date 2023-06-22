@@ -1,0 +1,36 @@
+nav{
+    /* background-color: aqua; */
+    
+}
+
+ul{
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: large;
+    font-weight: bold;
+    /* color: #fff; */
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+}
+
+ul:hover li{
+    filter: blur(1px);
+}
+
+ul li:hover{
+    filter: blur(0);
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgb(50, 50, 245) 35%, rgb(255,0,221) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
