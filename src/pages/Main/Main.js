@@ -26,9 +26,7 @@ export const Main = () => {
                         <br />
                         I'm the Frontend Developer.
                     </h1>
-                    <p className="hero-cta load-hidden">
-                        <a rel="noreferrer" className="cta-btn cta-btn--hero" href="#about">Know more</a>
-                    </p>
+                    <button className='home-btn'>Know more</button>
                 </div>
 
                 <div id='calculation'>
@@ -44,7 +42,7 @@ export const Main = () => {
                         <div id='projects'>
                             <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
                             <h1 className='count'>
-                                {counterOn && <CountUp start={0} end={8} duration={8} delay={0}/>}
+                                {counterOn && <CountUp start={0} end={10} duration={6} delay={0}/>}
                                 +
                             </h1>
                             </ScrollTrigger>
