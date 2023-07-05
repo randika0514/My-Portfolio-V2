@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
 nav{
     background-color: #a29bfe;
-    max-width: 1200;
     display: flex;
     align-items: center;
+    clip-path: ellipse(70% 85% at 50% 10%);
     justify-content: space-between;
+    height: 65px;
 }
 
 h2{
@@ -11,7 +16,7 @@ h2{
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fff;
+    color: black
 }
 
 ul{
@@ -24,9 +29,10 @@ ul{
 li{
     display: inline-block;
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 50px;
     font-size: large;
     font-weight: 500;
+    font-family: 'Cabin', sans-serif;
     color: #fff;
     transition: 0.5s;
     letter-spacing: 0.5px;
@@ -40,8 +46,11 @@ ul:hover li{
 ul li:hover{
     filter: blur(0);
     cursor: pointer;
-    letter-spacing: 1px;
-    background: linear-gradient(90deg, rgb(243, 215, 72) 35%, rgb(220, 234, 22) 100%);
+    letter-spacing: 2px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    /* background: #282341; */
+    background: linear-gradient(90deg, #282341 35%, #282341 100%);
     /* background: linear-gradient(90deg, rgb(50, 50, 245) 35%, rgb(255,0,221) 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -84,9 +93,9 @@ ul li:hover{
 }
 
 
-/* Responsive design */
+/* Responsive design before=900*/
 
-@media(max-width: 900px){
+@media(max-width: 1000px){
     .navbar .links{
         display: none;
     }

@@ -26,12 +26,15 @@
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
+    color: #282341;
+    
   }
 
   .text-color-main{
     color: #a29bfe;
   }
 
+  
   .hero-cta {
     display: flex;
   }
@@ -77,9 +80,48 @@
     position: relative;
     top: -1rem;
     margin-bottom: 1rem;
+    color: #282341;
+    font-size: 3.5em;
 }
 
 .info{
     font-weight: 500;
     color: rgba(0, 0, 0, 0.551);
+}
+
+.profile-photo{
+  width: 375px;
+  height: 450px;
+  background-image: url(E:\iCET\iCM\React\my-portfolio-v2\src\img\profile-photo.jpg);
+  background-size: cover;
+  position: absolute;
+  margin: auto;
+  right: 100px;
+  top: 0;
+  bottom: 0;
+}
+
+@media(max-width:1385px){
+  .profile-photo{
+    width: 350px;
+    height: 425px;
+  }
+}
+
+@media(max-width:1150px){
+  .profile-photo{
+    width: 350px;
+    height: 425px;
+    top: 40%;
+  }
+}
+
+@media(max-width:930px){
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    color: #282341;
+  }
 }
